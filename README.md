@@ -1,7 +1,7 @@
-# Lab 1 - React Native Basics
+# Lab 2 - React Native Basics
 
 ## Overview
-This is my first React Native lab assignment for CPRG 303B - Mobile Application Development at SAIT. The lab demonstrates basic React Native concepts including component creation, state management, and user interaction.
+This is my second React Native lab assignment for CPRG 303B - Mobile Application Development at SAIT. The lab demonstrates basic React Native concepts including component creation, state management, and user interaction.
 
 ## Features
 - Welcome message display
@@ -55,7 +55,7 @@ This is my first React Native lab assignment for CPRG 303B - Mobile Application 
 2. View the welcome message
 3. Browse the fruit list
 4. Tap on any fruit image link to open the full image in your browser
-5. Press "Complete Lab 1" button to see completion alert
+5. Press "Complete Lab 2" button to see completion alert
 
 ## Code Structure
 ```
