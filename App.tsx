@@ -13,7 +13,7 @@ export default function App() {
   const groupMembers: GroupMember[] = [
     { name: 'anne marie ala', github_repo: 'annieala', group_no: '1' },
     { name: 'samuel braun', github_repo: 'samuelbraun', group_no: '2' },
-    { name: 'merilyn', github_repo: 'merilyn', group_no: '3' },
+    { name: 'merilyne', github_repo: 'merilyne', group_no: '3' },
   ];
 
   // State to track if the "Group Members:" title should be bold
