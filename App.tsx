@@ -28,7 +28,7 @@ export default function App() {
   const openGithubProfile = (username: string) => {
     Linking.openURL(`https://github.com/${username}`);
   };
-   //Function to open your main repository
+   //Function to open yeeeour main repository
   const OpenMainRepository =() =>{
     Linking.openURL('https://github.com//CPRG303B-Lab');
   };
