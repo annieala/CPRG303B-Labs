@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable, Alert } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter } from 'expo-router'; // Correctly imported
+
+// Assuming FruitList is still relevant for your Lab 2 content
 import FruitList from '../components/Fruits';
 
 export default function Index() {
@@ -15,36 +17,55 @@ export default function Index() {
     router.push('/lab-3');
   };
 
+  // --- NEW CODE FOR LAB 4 ---
+  const navigateToLab4 = () => {
+    router.push('/lab4'); // This will navigate to app/lab4.tsx
+  };
+  // --- END NEW CODE ---
+
   return (
     <View style={{ padding: 20, paddingTop: 50}}>
       <Text style={{ fontSize: 24, marginBottom: 20, color: 'pink'}}>
         {welcomeMessage}
       </Text>
-      
+
       <FruitList />
-      
+
       <Pressable onPress={showLabComplete} style={{ marginTop: 20 }}>
-        <Text style={{ 
-          color: 'blue', 
-          textDecorationLine: 'underline', 
+        <Text style={{
+          color: 'blue',
+          textDecorationLine: 'underline',
           fontSize: 18,
-          textAlign: 'center' 
+          textAlign: 'center'
         }}>
           Complete Lab 2
         </Text>
       </Pressable>
 
       <Pressable onPress={navigateToLab3} style={{ marginTop: 15 }}>
-        <Text style={{ 
-          color: 'green', 
-          textDecorationLine: 'underline', 
+        <Text style={{
+          color: 'green',
+          textDecorationLine: 'underline',
           fontSize: 18,
-          textAlign: 'center' 
+          textAlign: 'center'
         }}>
           Go to Lab 3
         </Text>
       </Pressable>
-      
+
+      {/* --- NEW PRESSABLE FOR LAB 4 --- */}
+      <Pressable onPress={navigateToLab4} style={{ marginTop: 15 }}>
+        <Text style={{
+          color: 'purple', // Choose a distinct color
+          textDecorationLine: 'underline',
+          fontSize: 18,
+          textAlign: 'center'
+        }}>
+          Go to Lab 4
+        </Text>
+      </Pressable>
+      {/* --- END NEW PRESSABLE --- */}
+
       <StatusBar style="auto" />
     </View>
   );
