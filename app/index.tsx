@@ -15,6 +15,13 @@ export default function Index() {
     router.push('/lab-3');
   };
 
+    const navigateToLab4 = () => {
+    router.push('/lab-4');
+  };
+
+    const navigateToLab5 = () => {
+    router.push('/lab-5');
+  };
   return (
     <View style={{ padding: 20, paddingTop: 50}}>
       <Text style={{ fontSize: 24, marginBottom: 20, color: 'pink'}}>
@@ -42,6 +49,29 @@ export default function Index() {
           textAlign: 'center' 
         }}>
           Go to Lab 3
+        </Text>
+      </Pressable>
+
+      
+      <Pressable onPress={navigateToLab4} style={{ marginTop: 15 }}>
+        <Text style={{ 
+          color: 'green', 
+          textDecorationLine: 'underline', 
+          fontSize: 18,
+          textAlign: 'center' 
+        }}>
+          Go to Lab 4
+        </Text>
+      </Pressable>
+
+        <Pressable onPress={navigateToLab5} style={{ marginTop: 15 }}>
+        <Text style={{ 
+          color: 'green', 
+          textDecorationLine: 'underline', 
+          fontSize: 18,
+          textAlign: 'center' 
+        }}>
+          Go to Lab 5
         </Text>
       </Pressable>
       
